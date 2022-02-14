@@ -34,7 +34,7 @@ class mysqlPileLine(object):
     cursor = None
     #创建数据库连接
     def open_spider(self,spider):
-        self.conn = pymysql.Connect(host='localhost',port=3306,user='root',passwd='XSP4436283asd.',db='freedomsecurityhacker',charset='utf8')
+        self.conn = pymysql.Connect(host='localhost',port=3306,user='root',passwd='root',db='freedomsecurityhacker',charset='utf8')
     #将数据存储到数据库
     def process_item(self,item,spider):
         article_name = item['article_name']
